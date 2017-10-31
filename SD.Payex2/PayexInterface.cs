@@ -65,7 +65,7 @@ namespace SD.Payex2
         {
             Uri baseAddress;
             if (UseTestEnvironment)
-                baseAddress = new Uri("https://test-external.payex.com/pxorder/pxorder.asmx");
+                baseAddress = new Uri("https://external.externaltest.payex.com/pxorder/pxorder.asmx");
             else
                 baseAddress = new Uri("https://external.payex.com/pxorder/pxorder.asmx");
             var payexOrder = new PxOrderSoapClient(
@@ -79,7 +79,7 @@ namespace SD.Payex2
         {
             Uri baseAddress;
             if (UseTestEnvironment)
-                baseAddress = new Uri("https://test-external.payex.com/pxagreement/pxagreement.asmx");
+                baseAddress = new Uri("https://external.externaltest.payex.com/pxagreement/pxagreement.asmx");
             else
                 baseAddress = new Uri("https://external.payex.com/pxagreement/pxagreement.asmx");
             var payexOrder = new PxAgreementSoapClient(
